@@ -11,7 +11,7 @@
     margin: 10px 0;
     text-decoration: underline;
     text-decoration-style: double;
-    text-decoration-color: $blue;
+    text-decoration-color: $lightRed;
   }
   .work__wrapper {
     display: grid;
@@ -42,7 +42,7 @@
         color: #000;
         text-decoration: underline;
         text-decoration-style: double;
-        text-decoration-color: $blue;
+        text-decoration-color: $lightRed;
         &:hover {
           text-decoration-style: solid;
         }
@@ -69,7 +69,7 @@
         color: #000;
         text-decoration: underline;
         text-decoration-style: double;
-        text-decoration-color: $blue;
+        text-decoration-color: $lightRed;
         &:hover {
           text-decoration-style: solid;
         }
@@ -89,7 +89,7 @@
         font-size: 1.2rem;
         font-weight: 900;
         margin: 5px 0;
-        color: $blue;
+        color: $lightRed;
       }
       p {
         font-family: $karla;
@@ -103,7 +103,7 @@
         color: #000;
         text-decoration: underline;
         text-decoration-style: double;
-        text-decoration-color: $blue;
+        text-decoration-color: $lightRed;
         &:hover {
           text-decoration-style: solid;
         }
