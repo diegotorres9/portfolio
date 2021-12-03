@@ -13,6 +13,8 @@
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .hero {
     width: 100%;
@@ -73,6 +75,14 @@ main {
     background-color: #ffbf13;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 }
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+.project-container img {
+    align-self: center;
+    justify-self: center;
+}
 footer {
     width: 100%;
     background: linear-gradient(90deg, var(--orangeRedCrayola), var(--sunglow), var(--orangeRedCrayola));
@@ -113,8 +123,8 @@ footer svg:hover {
         border-radius: 3px;
     }
     .about p {
-        font-size: 1.2rem;
-        /* align-self: center; */
+        font-size: 1.4rem;
+        align-self: center;
     }
     .project-container {
         display: grid;
@@ -124,6 +134,14 @@ footer svg:hover {
     .project-container img {
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
         border-radius: 3px;
+    }
+    .project-container h2 {
+        font-size: 3.6rem;
+    }
+    .project-container p {
+        font-size: 1.8rem;
+    }.project-container .site-link {
+        width: 260px;
     }
     .project-container .project-info {
         align-self: center;
@@ -146,8 +164,8 @@ footer svg:hover {
     }
 }
 /* DESKTOP MEDIA QUERY */
-/* @media screen and (min-width: 1200px) {
-    .hero {
+@media screen and (min-width: 1400px) {
+    .hero{
         width: 100%;
         height: 100vh;
     }
@@ -157,41 +175,33 @@ footer svg:hover {
     .hero p {
         font-size: 7.5rem;
     }
-    .about {
-        display: flex;
-        flex-direction: row;
-        margin: 2rem 1rem;
-    }
-    .about img {
-        width: 750px;
-        height: 750px;
-    }
     .about p {
+        font-size: 2rem;
+        align-self: center;
+    }
+    .project-one img, .project-three img{
+     justify-self: end;
+     width: 650px;
+     height: 650px;
+     margin-right: 1rem;
+    }
+    .project-container h2 {
+        font-size: 6rem;
+    }
+    .project-container p {
         font-size: 2.3rem;
-        align-self: center;
     }
-    .work {
-        margin-top: 2.5rem;
+    .project-container .site-link {
+        width: 260px;
+        height: 80px;
     }
-    .project-container {
-        display: flex;
-        flex-direction: row;
-        margin: 2.5rem 1rem;
+    .project-two {
+        margin: 2.5rem 0;
     }
-    .project-container img {
-        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
-        border-radius: 3px;
-        height: 300px;
+    .project-two img {
+        margin-left: 1rem;
+        justify-self: start;
+        width: 650px;
+        height: 650px;
     }
-    .project-container .project-info{
-        align-self: center;
-    }
-    .project-container.project-one {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    .project-container.project-three {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-} */
+}
