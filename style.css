@@ -2,60 +2,144 @@
     /* Colors */
     --charcoal: #364652;
     --orangeRedCrayola: #fE5f55;
-    --middleBlueGreen: #8ECAC4;
+    --cornflowerBlue: #5C95FF;
+    --alabaster: #E8EBE4;
+    --sunglow: #FFCA3A;
 
     /* Fonts */
     --octinCollege: 'octin-college', sans-serif;
     --neuzeitGrotesk: 'neuzeit-grotesk', sans-serif;
 }
-.about h1 {
+main {
+    display: flex;
+    flex-direction: column;
+}
+.hero {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(150deg, var(--orangeRedCrayola), var(--sunglow), var(--orangeRedCrayola));
+    /* background-color: var(--cornflowerBlue); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1 {
     font-family: var(--octinCollege);
-    font-size: 3rem;
-    color: var(--charcoal);
+    font-size: 3.5rem;
     font-weight: 900;
-    margin: 1rem 1rem;
+    color: var(--charcoal);
+}
+.hero p {
+    font-family: var(--neuzeitGrotesk);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--charcoal);
 }
 .about p {
     font-family: var(--neuzeitGrotesk);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--charcoal);
-    font-weight: 300;
     line-height: 1.4;
-    margin: 0.5rem 1rem;
+    margin: 1rem 1.5rem;
 }
 .work h2 {
     font-family: var(--octinCollege);
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.3rem;
     color: var(--charcoal);
-    margin: 1rem 1rem;
-
+    margin: 1rem 1.5rem;
 }
 .work p {
     font-family: var(--neuzeitGrotesk);
-    font-size: 1.2rem;
-    color: var(--charcoal);
-    line-height: 1.4;
-    font-weight: 300;
-    margin: 0.5rem 1rem;
-}
-.work a {
-    display: block;
-    font-family: var(--octinCollege);
-    background-color: var(--orangeRedCrayola);
-    color: #fff;
     font-size: 1.3rem;
+    margin: 1rem 1.5rem;
+    line-height: 1.4;
+}
+.project-container .site-link {
     width: 180px;
     height: 60px;
+    background-color: var(--sunglow);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 1rem;
+    font-family: var(--neuzeitGrotesk);
+    font-size: 1.5rem;
+    color: var(--charcoal);
+    margin: 1rem 1.5rem;
+    transition: all 0.2s ease-in;
 }
-@media screen and (min-width: 768px) {
+.site-link:hover {
+    cursor: pointer;
+    background-color: #ffbf13;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+footer {
+    width: 100%;
+    background: linear-gradient(90deg, var(--orangeRedCrayola), var(--sunglow), var(--orangeRedCrayola));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+footer svg {
+    width: 64px;
+    height: 64px;
+    fill: var(--alabaster);
+}
+footer svg:hover {
+    cursor: pointer;
+    fill: #fbfcfb;
+}
+/* DESKTOP MEDIA QUERY */
+@media screen and (min-width: 1440px) {
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+    .hero h1 {
+        font-size: 10rem;
+    }
+    .hero p {
+        font-size: 7.5rem;
+    }
     .about {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(100fr));
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 1rem;
+    }
+    .about img {
+        width: 750px;
+        height: 750px;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+    }
+    .about p {
+        font-size: 2.3rem;
+        align-self: center;
+    }
+    .work {
+        margin-top: 2.5rem;
+    }
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        margin: 2.5rem 1rem;
+    }
+    .project-container img {
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        height: 300px;
+    }
+    .project-container .project-info{
+        align-self: center;
+    }
+    .project-container.project-one {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .project-container.project-three {
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 }
