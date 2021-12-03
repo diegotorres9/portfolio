@@ -1,0 +1,54 @@
+:root {
+    /* Colors */
+    --charcoal: #364652;
+    --orangeRedCrayola: #fE5f55;
+    --middleBlueGreen: #8ECAC4;
+
+    /* Fonts */
+    --octinCollege: 'octin-college', sans-serif;
+    --neuzeitGrotesk: 'neuzeit-grotesk', sans-serif;
+}
+.about h1 {
+    font-family: var(--octinCollege);
+    font-size: 3rem;
+    color: var(--charcoal);
+    font-weight: 900;
+    margin: 1rem 1rem;
+}
+.about p {
+    font-family: var(--neuzeitGrotesk);
+    font-size: 1.2rem;
+    color: var(--charcoal);
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0.5rem 1rem;
+}
+.work h2 {
+    font-family: var(--octinCollege);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 1rem 1rem;
+
+}
+.work p {
+    font-family: var(--neuzeitGrotesk);
+    font-size: 1.2rem;
+    color: var(--charcoal);
+    line-height: 1.4;
+    font-weight: 300;
+    margin: 0.5rem 1rem;
+}
+.work a {
+    display: block;
+    font-family: var(--octinCollege);
+    background-color: var(--orangeRedCrayola);
+    color: #fff;
+    font-size: 1.3rem;
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
