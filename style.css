@@ -91,8 +91,62 @@ footer svg:hover {
     cursor: pointer;
     fill: #fbfcfb;
 }
+/* TABLET MEDIA QUERY */
+@media screen and (min-width: 810px) {
+    .hero {
+        width: 100%;
+        height: 70vh;
+    }
+    .hero h1 {
+        font-size: 7.5rem;
+    }
+    .hero p {
+        font-size: 4rem;
+    }
+    .about {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 2rem 1rem;
+    }
+    .about img {
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+    }
+    .about p {
+        font-size: 1.2rem;
+        /* align-self: center; */
+    }
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 3.1rem 0;
+    }
+    .project-container img {
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+    }
+    .project-container .project-info {
+        align-self: center;
+    }
+    .project-container .project-one img{
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    .project-container.project-one .project-info {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .project-container .project-three img{
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    .project-container.project-three .project-info {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+}
 /* DESKTOP MEDIA QUERY */
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1200px) {
     .hero {
         width: 100%;
         height: 100vh;
@@ -111,8 +165,6 @@ footer svg:hover {
     .about img {
         width: 750px;
         height: 750px;
-        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
-        border-radius: 3px;
     }
     .about p {
         font-size: 2.3rem;
@@ -142,4 +194,4 @@ footer svg:hover {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-}
+} */
