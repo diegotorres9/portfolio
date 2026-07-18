@@ -11,16 +11,25 @@
     <link rel="icon" type="image/png" sizes="16x16"
         href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/styles/css/reset.css">
+    <link rel="stylesheet" href="/styles/css/style.css">
     <title>Diego Torres</title>
 </head>
 
 <body>
     <section class="hero">
-        <h1>Hello! I'm Diego.</h1>
-        <p>I love to build on the web! Whether it's a quick landing page, a
-            small site, or something a little bit bigger. Feel free to browse
-            through some of the sites i've built.</p>
+        <div>
+            <h1>Hello! I'm Diego.</h1>
+            <p>I love to build on the web! Whether it's a quick landing page, a
+                small site, or something a little bit bigger. Feel free to
+                browse
+                through some of the sites i've built.</p>
+        </div>
         <picture>
             <source srcset="/assets/profile-image/profile-photo-1280w.webp"
                 media="(width >= 1280px)">
@@ -30,40 +39,117 @@
                 alt="Diego Torres: Front End Web Developer.">
         </picture>
     </section>
-    <main class="pojects-wrapper ">
-        <div class="project-container"
-            style="display: flex; flex-direction: column; align-items: center;">
+    <main class="projects-wrapper">
+        <div class="project-container">
             <div class="project-image-container">
                 <img src="/assets/project-images/devHorizon.webp"
                     alt="Dev Horizon project image." loading="lazy">
             </div>
             <div class="project-copy">
                 <h2>Dev Horizon</h2>
-                <p>A tech conference site built using the NEXTJS framework and
-                    Tailwind.</p>
-                <a href="https://devhorizon.diegoetorres.com"
-                    class="view_site-link">Visit Site</a>
-                <a href="https://github.com/diegotorres9/devhorizon"
-                    class="view_code-link">View Code</a>
+                <p>A tech conference site built using the NEXTJS framework.</p>
+                <div class="project-copy_links">
+                    <a href="https://www.devhorizon.diegoetorres.com"
+                        target="_blank" class="view_site-link">Visit Site</a>
+                    <a href="https://github.com/diegotorres9/devhorizon"
+                        target="_blank" class="view_code-link">View Code</a>
+                </div>
             </div>
         </div>
-        <div class="project-container"
-            style="display: flex; flex-direction: column; align-items: center;">
+        <div class="project-container">
             <div class="project-image-container">
-                <img src="/assets/project-images/devHorizon.webp"
-                    alt="Dev Horizon project image." loading="lazy">
+                <img src="/assets/project-images/designo.webp"
+                    alt="Designo project image." loading="lazy">
             </div>
             <div class="project-copy">
-                <h2>Dev Horizon</h2>
-                <p>A tech conference site built using the NEXTJS framework and
-                    Tailwind.</p>
-                <a href="https://devhorizon.diegoetorres.com"
-                    class="view_site-link">Visit Site</a>
-                <a href="https://github.com/diegotorres9/devhorizon"
-                    class="view_code-link">View Code</a>
+                <h2>Designo</h2>
+                <p>A multipage site built with HTML, SASS, and JavaScript.
+                    Leverages <a href="https://leafletjs.com/">leafletJS</a> to
+                    display maps of office locations.</p>
+                <div class="project-copy_links">
+                    <a href="https://diegoetorres.com/designo" target="_blank"
+                        class="view_site-link">Visit Site</a>
+                    <a href="https://github.com/diegotorres9/designo-site"
+                        class="view_code-link">View Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-image-container">
+                <img src="/assets/project-images/photosnap.webp"
+                    alt="Photosnap project image." loading="lazy">
+            </div>
+            <div class="project-copy">
+                <h2>Photosnap</h2>
+                <p>A multipage site built with HTML, CSS, and JavaScript.
+                    Leverages JavaScript to toggle the pricing options between
+                    three options.</p>
+                <div class="project-copy_links">
+                    <a href="https://diegoetorres.com/photosnap" target="_blank"
+                        class="view_site-link">Visit Site</a>
+                    <a href="https://github.com/diegotorres9/photosnap"
+                        class="view_code-link">View Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-image-container">
+                <img src="/assets/project-images/artGallery.webp"
+                    alt="Art Gallery project image." loading="lazy">
+            </div>
+            <div class="project-copy">
+                <h2>Art Gallery</h2>
+                <p>A multipage site built with HTML, CSS, and JavaScript.</p>
+                <div class="project-copy_links">
+                    <a href="https://diegoetorres.com/art-gallery"
+                        target="_blank" class="view_site-link">Visit Site</a>
+                    <a href="https://github.com/diegotorres9/art-gallery"
+                        target="_blank" class="view_code-link">View Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-image-container">
+                <img src="/assets/project-images/singlePageDesignPortfolio.webp"
+                    alt="Tech Book Club project image." loading="lazy">
+            </div>
+            <div class="project-copy">
+                <h2>Single Page Design Portfolio</h2>
+                <p>A landing page featuring an interactive carousel</p>
+                <div class="project-copy_links">
+                    <a href="https://diegoetorres.com/single-page-design-portfolio"
+                        target="_blank" class="view_site-link">Visit Site</a>
+                    <a href="https://github.com/diegotorres9/single-page-portfolio"
+                        target="_blank" class="view_code-link">View Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-image-container">
+                <img src="/assets/project-images/techBookClub.webp"
+                    alt="Tech Book Club project image." loading="lazy">
+            </div>
+            <div class="project-copy">
+                <h2>Tech Book Club</h2>
+                <p>A responsive landing page built with HTML and CSS </p>
+                <div class="project-copy_links">
+                    <a href="https://diegoetorres.com/tech-club" target="_blank"
+                        class="view_site-link">Visit Site</a>
+                    <a href="https://github.com/diegotorres9/tech-book-club"
+                        target="_blank" class="view_code-link">View Code</a>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <span>© 2026</span>
+        <div>
+            <a href="https://www.linkedin.com/in/diego-torres-377419163"
+                target="_blank" class="socials_link">LinkedIn</a>
+            <a href="https://github.com/diegotorres9" target="_blank"
+                class="socials_link">Github</a>
+        </div>
+    </footer>
 </body>
 
 </html>
