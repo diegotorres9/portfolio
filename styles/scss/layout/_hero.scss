@@ -1,0 +1,37 @@
+@use "../abstracts/variables";
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(1.5rem, 12.77vw - 1.493rem, 10rem);
+  background: var(--primary-gradient-color);
+  background: linear-gradient(
+    125deg,
+    var(--primary-gradient-color) 0%,
+    var(--secondary-gradient-color) 51%,
+    var(--tertiary-gradient-color) 100%
+  );
+  height: 80vh;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  picture {
+    display: none;
+  }
+  @media screen and (width >= 1280px) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    div {
+      grid-area: 1 / 1 / 5 / 4;
+      text-align: left;
+    }
+    picture {
+      display: inline-block;
+      grid-area: 1 / 4 / 5 / 7;
+      justify-self: end;
+    }
+  }
+}
