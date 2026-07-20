@@ -36,7 +36,8 @@
                 media="(width >= 1280px)">
             <source srcset="/assets/profile-image/profile-photo-768w.webp"
                 media="(width >= 768px)">
-            <img src="/assets/profile-image/profile-photo-375w.webp"
+            <img class="hero_image"
+                src="/assets/profile-image/profile-photo-375w.webp"
                 alt="Diego Torres: Front End Web Developer.">
         </picture>
     </section>
@@ -152,7 +153,42 @@
         </div>
     </footer>
 
-    <script src="/js/gsap.min.js" defer></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/SplitText.min.js"></script>
+    <script>
+        gsap.registerPlugin(SplitText);
+
+        let headingSplit = SplitText.create(".hero_heading", {
+            type: "chars, words"
+        });
+        let heroText = SplitText.create(".hero_text", {
+            type: "words, lines"
+        });
+        gsap.from(headingSplit.chars, {
+            x: -100,
+            autoAlpha: 0,
+            duration: 1,
+            stagger: 0.1
+        });
+        gsap.from(heroText.lines, {
+            y: 100,
+            autoAlpha: 0,
+            duration: 1.5,
+            stagger: 0.07,
+        });
+        gsap.from(".hero_heading", {
+            x: -500,
+            duration: 1,
+            stagger: 0.1,
+            ease: "power4.out"
+        });
+        gsap.from(".hero_image", {
+            y: 300,
+            opacity: 0,
+            duration: 1.7,
+            stagger: 0.7,
+        });
+    </script>
 </body>
 
 </html>
