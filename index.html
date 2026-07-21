@@ -155,8 +155,11 @@
 
     <script src="/js/gsap.min.js"></script>
     <script src="/js/SplitText.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
     <script>
         gsap.registerPlugin(SplitText);
+        gsap.registerPlugin(ScrollTrigger);
+
 
         let headingSplit = SplitText.create(".hero_heading", {
             type: "chars, words"
@@ -188,6 +191,19 @@
             duration: 1.7,
             stagger: 0.7,
         });
+        document.querySelectorAll(".project-container").forEach(project => {
+            gsap.from(project, {
+                opacity: 1,
+                y: 100,
+                duration: 1.5,
+                stagger: 0.5,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: project,
+                }
+            });
+        })
+
     </script>
 </body>
 
