@@ -6,6 +6,12 @@ footer {
   padding-left: clamp(1rem, 12.77vw - 1.493rem, 10rem);
   padding-right: clamp(1rem, 12.77vw - 1.493rem, 10rem);
   margin-bottom: 1rem;
+  p {
+    color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
   div {
     display: flex;
     gap: 1rem;
